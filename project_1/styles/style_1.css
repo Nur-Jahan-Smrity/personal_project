@@ -1,3 +1,65 @@
-.hi{
-    background-color: aquamarine;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* here we imported lato font from fonts.google.com */
+/* here first of all we selected lato from that website ,than we selected all those type under lato type . Than we select the import button at the right side . After that a link will be visible . We will copy that link and then paste it at the top of our css file . */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lato', sans-serif;
+    /* we got this font-family type from that website (fonts.google.com) */
+}
+.first{
+    background-image: url('../images/pic_1.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+}
+.first h1{
+    color: aliceblue;
+    font-size: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    word-spacing: 40px;
+    letter-spacing: 5px;
+    /* padding top is used to shift that line little downword */
+    padding-top: 60px;
+  
+}
+.article{
+     width: 80%;
+    /*margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px; */
+    margin: 60px auto;
+    /* TB LR */
+    padding: 60px;
+    background-color:cornflowerblue;
+    border-width: 15px;
+    border-color:darkblue;
+    border-style: groove;
+}
+.article h2{
+    text-align: center;
+    font-size: 48px;
+    border-style: groove;
+    border-width: 8px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color:darkblue;
+    /* distance from h2 tag sentence to its underline */
+    padding-bottom: 30px;
+    /* distance from underline to paragraph underneath the underline */
+    margin-bottom: 60px;
+}
+.article p{
+    font-size: 25px;
+    /* line-height: 2em; */
+}
+.article p .im{
+    font-style: italic;
+    color: blue;
+    font-size: 1em;
+    /* 1 em means parent size er shoman . 2em means parent size theke 2 gun beshi ..parent size bolte paragraph tag ta te already font size 25px dewa ache ..oita k bujhaise  */
 }
