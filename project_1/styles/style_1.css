@@ -12,6 +12,8 @@
     background-size: cover;
     background-position: bottom center;
     height: 100vh;
+    clip-path: polygon(50% 0%, 100% 0, 100% 67%, 80% 100%, 21% 100%, 0 67%, 0 0);
+    /* CSS clip path generator --> theke newa hoise path ta */
 }
 .first h1{
     color: aliceblue;
@@ -22,10 +24,11 @@
     word-spacing: 40px;
     letter-spacing: 5px;
     /* padding top is used to shift that line little downword */
-    padding-top: 60px;
+     padding-top: 430px; 
+    /* padding-bottom: 60px; */
   
 }
-.article{
+.article {
      width: 80%;
     /*margin-left: auto;
     margin-right: auto;
@@ -34,12 +37,28 @@
     margin: 60px auto;
     /* TB LR */
     padding: 60px;
-    background-color:cornflowerblue;
+    /* background-color:cornflowerblue; */
+    background: linear-gradient(10deg,cornflowerblue,black,purple);
     border-width: 15px;
     border-color:darkblue;
     border-style: groove;
 }
-.article h2{
+#visited_place {
+    width: 80%;
+   /*margin-left: auto;
+   margin-right: auto;
+   margin-top: 60px;
+   margin-bottom: 60px; */
+   margin: 60px auto;
+   /* TB LR */
+   padding: 60px;
+   /* background-color:cornflowerblue; */
+   border-width: 15px;
+   /* border-color:darkblue; */
+   border-style: groove;
+   background: linear-gradient(45deg,cornflowerblue,black,rgb(92, 0, 128));
+}
+.article h2, #visited_place h2{
     text-align: center;
     font-size: 48px;
     border-style: groove;
@@ -52,14 +71,41 @@
     padding-bottom: 30px;
     /* distance from underline to paragraph underneath the underline */
     margin-bottom: 60px;
+    color: aliceblue;
 }
 .article p{
     font-size: 25px;
     /* line-height: 2em; */
+    color: beige;
 }
 .article p .im{
     font-style: italic;
-    color: blue;
+    color:goldenrod;
     font-size: 1em;
     /* 1 em means parent size er shoman . 2em means parent size theke 2 gun beshi ..parent size bolte paragraph tag ta te already font size 25px dewa ache ..oita k bujhaise  */
+}
+.travel-pic{
+    /* travel pic class ta hocche picture gula j div er vitore ache takae represent kortese ..ekhane picture gulo k jodi pashapashi rakhte jai tader parent div er moddhe display flex use korte hobe ..by default flex direction pashapashi row te thakae tao chaile dewa jay..abr column wise o dewa jay.. */
+    display: flex;
+    flex-direction: row;
+    /* pashapashi thakbe picture */
+    gap: 20px;
+    /* flex-wrap: wrap; */
+
+    /* justify-content: center; */
+    /* piture majkhane ashbe */
+
+    /* justify-content: space-around; */
+    /* picture er charpashe space thakbe */
+
+    /* justify-content: space-between; */
+    /* picture 2 ta 2 side e jabe majkhane space thakbe */
+}
+.travel-pic div{
+     min-width: 200px; 
+    /* prottek ta picture 300px er moddhe thakbe kono picture 300px er baire gele 2nd picture ta tar upor boshe jabe 300px er pore j part thakbe tar upor.. */
+}
+.travel-pic img{
+     width: 100%;
+     /* shob gula picture pashapashi thakbe ..oi page er baire jabe na.. baire extra part thakbe na */
 }
