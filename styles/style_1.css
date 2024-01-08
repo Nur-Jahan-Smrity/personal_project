@@ -90,7 +90,7 @@
     flex-direction: row;
     /* pashapashi thakbe picture */
     gap: 20px;
-    /* flex-wrap: wrap; */
+     /* flex-wrap: wrap;  */
 
     /* justify-content: center; */
     /* piture majkhane ashbe */
@@ -109,6 +109,9 @@
      width: 100%;
      /* shob gula picture pashapashi thakbe ..oi page er baire jabe na.. baire extra part thakbe na */
 }
+.audio_video div{
+    min-width: 200px; 
+}
 .audio_video ,.audio_video h3{
     justify-content: center;
     display: flex;
@@ -117,7 +120,7 @@
     
 }
 .audio_video h3{
-    /* font-size: 48px; */
+     font-size: 18px; 
     border-style: groove;
     border-width: 8px;
     border-top: 0;
