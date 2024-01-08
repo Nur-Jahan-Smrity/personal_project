@@ -43,7 +43,7 @@
     border-color:darkblue;
     border-style: groove;
 }
-#visited_place {
+#visited_place ,.p_audio_video{
     width: 80%;
    /*margin-left: auto;
    margin-right: auto;
@@ -58,7 +58,7 @@
    border-style: groove;
    background: linear-gradient(45deg,cornflowerblue,black,rgb(92, 0, 128));
 }
-.article h2, #visited_place h2{
+.article h2, #visited_place h2,.p_audio_video h2{
     text-align: center;
     font-size: 48px;
     border-style: groove;
@@ -108,4 +108,26 @@
 .travel-pic img{
      width: 100%;
      /* shob gula picture pashapashi thakbe ..oi page er baire jabe na.. baire extra part thakbe na */
+}
+.audio_video ,.audio_video h3{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    
+}
+.audio_video h3{
+    /* font-size: 48px; */
+    border-style: groove;
+    border-width: 8px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: aliceblue;
+    border-color:darkblue;
+    /* distance from h3 tag sentence to its underline */
+    padding-bottom: 30px;
+    /* distance from underline to paragraph underneath the underline */
+    margin-bottom: 20px;
+    
 }
